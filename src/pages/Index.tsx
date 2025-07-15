@@ -1,12 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect } from 'react';
+import { Header } from '@/components/Header';
+import { HeroSection } from '@/components/HeroSection';
+import { AboutSection } from '@/components/AboutSection';
+import { BookstoreSection } from '@/components/BookstoreSection';
+import { CurriculumSection } from '@/components/CurriculumSection';
+import { TestimonialsSection } from '@/components/TestimonialsSection';
+import { FAQSection } from '@/components/FAQSection';
+import { ContactSection } from '@/components/ContactSection';
+import { AdminPanel } from '@/components/AdminPanel';
+import { Footer } from '@/components/Footer';
 
 const Index = () => {
+  useEffect(() => {
+    // Smooth scrolling behavior
+    document.documentElement.style.scrollBehavior = 'smooth';
+    
+    return () => {
+      document.documentElement.style.scrollBehavior = 'auto';
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background font-body">
+      <Header />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <BookstoreSection />
+        <CurriculumSection />
+        <TestimonialsSection />
+        <FAQSection />
+        <ContactSection />
+        <AdminPanel />
+      </main>
+      <Footer />
     </div>
   );
 };

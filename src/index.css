@@ -8,35 +8,63 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* ADHD-friendly color palette - calming blues, soft greens, gentle purples */
+    --background: 210 30% 98%;
+    --foreground: 220 20% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 20% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 20% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Soft blue primary - calming for ADHD minds */
+    --primary: 210 60% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 50% 85%;
+    --primary-glow: 210 80% 75%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Gentle green secondary - nature-inspired calm */
+    --secondary: 155 40% 75%;
+    --secondary-foreground: 155 30% 25%;
+    --secondary-light: 155 30% 90%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Soft purple accent - creativity and imagination */
+    --accent: 280 35% 80%;
+    --accent-foreground: 280 50% 25%;
+    --accent-light: 280 25% 95%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Warm peach for highlights */
+    --highlight: 25 85% 85%;
+    --highlight-foreground: 25 50% 30%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --muted: 210 25% 92%;
+    --muted-foreground: 220 15% 55%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 75% 70%;
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --border: 210 20% 88%;
+    --input: 210 20% 95%;
+    --ring: 210 60% 65%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients for ADHD-friendly design */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-light)), hsl(var(--accent-light)));
+    --gradient-soft: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--primary-light) / 0.05));
+    
+    /* Shadows with primary color */
+    --shadow-soft: 0 4px 20px hsl(var(--primary) / 0.08);
+    --shadow-card: 0 8px 30px hsl(var(--primary) / 0.12);
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
