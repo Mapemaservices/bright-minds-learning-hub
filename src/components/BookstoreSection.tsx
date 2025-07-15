@@ -117,14 +117,14 @@ export const BookstoreSection = () => {
           </div>
 
           {/* Filters */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-between items-start sm:items-center">
-            <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col lg:flex-row gap-4 mb-8 justify-between items-start lg:items-center px-4 sm:px-0">
+            <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
               <div className="flex items-center gap-2">
                 <Filter className="w-4 h-4 text-muted-foreground" />
                 <span className="font-body text-sm text-muted-foreground">Filter by:</span>
               </div>
               <Select value={filterBy} onValueChange={setFilterBy}>
-                <SelectTrigger className="w-48">
+                <SelectTrigger className="w-full sm:w-48">
                   <SelectValue placeholder="Select category" />
                 </SelectTrigger>
                 <SelectContent>
@@ -138,7 +138,7 @@ export const BookstoreSection = () => {
             </div>
 
             <Select value={sortBy} onValueChange={setSortBy}>
-              <SelectTrigger className="w-48">
+              <SelectTrigger className="w-full sm:w-48">
                 <SelectValue placeholder="Sort by" />
               </SelectTrigger>
               <SelectContent>
@@ -152,7 +152,7 @@ export const BookstoreSection = () => {
           </div>
 
           {/* Books Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-0">
             {filteredBooks.map((book, index) => (
               <Card key={book.id} className="bg-gradient-card border-border/50 hover:shadow-card transition-all duration-300 hover:scale-105 group">
                 <CardContent className="p-0">

@@ -42,17 +42,17 @@ export const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="font-heading font-bold text-3xl md:text-5xl text-foreground mb-6">
+          <div className="text-center mb-12 sm:mb-16 px-4 sm:px-0">
+            <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-foreground mb-4 sm:mb-6">
               Stay in the Loop
             </h2>
-            <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-body text-base sm:text-lg text-muted-foreground max-w-2xl lg:max-w-3xl mx-auto">
               Join our community of homeschooling families and get tips, resources, and encouragement 
               delivered right to your inbox.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-0">
             {/* Newsletter Signup */}
             <Card className="bg-gradient-card border-border/50 hover:shadow-card transition-all duration-300">
               <CardHeader>

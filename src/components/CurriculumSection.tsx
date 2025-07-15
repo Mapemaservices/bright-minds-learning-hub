@@ -66,32 +66,32 @@ export const CurriculumSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="font-heading font-bold text-3xl md:text-5xl text-foreground mb-6">
+          <div className="text-center mb-12 sm:mb-16 px-4 sm:px-0">
+            <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-foreground mb-4 sm:mb-6">
               Homeschool Curriculum for Kids with ADHD
             </h2>
-            <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="font-body text-base sm:text-lg text-muted-foreground max-w-2xl lg:max-w-3xl mx-auto mb-6 sm:mb-8">
               Flexible, engaging, and ADHD-friendly lesson plans that honor your child's unique learning style 
               while building essential skills and confidence.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <div className="flex items-center gap-2 bg-card/70 backdrop-blur-sm rounded-full px-4 py-2">
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+              <div className="flex items-center gap-2 bg-card/70 backdrop-blur-sm rounded-full px-3 sm:px-4 py-2">
                 <BookOpen className="w-4 h-4 text-primary" />
-                <span className="font-body text-sm text-foreground">Multi-Sensory Learning</span>
+                <span className="font-body text-xs sm:text-sm text-foreground">Multi-Sensory Learning</span>
               </div>
-              <div className="flex items-center gap-2 bg-card/70 backdrop-blur-sm rounded-full px-4 py-2">
+              <div className="flex items-center gap-2 bg-card/70 backdrop-blur-sm rounded-full px-3 sm:px-4 py-2">
                 <Clock className="w-4 h-4 text-secondary" />
-                <span className="font-body text-sm text-foreground">Flexible Scheduling</span>
+                <span className="font-body text-xs sm:text-sm text-foreground">Flexible Scheduling</span>
               </div>
-              <div className="flex items-center gap-2 bg-card/70 backdrop-blur-sm rounded-full px-4 py-2">
+              <div className="flex items-center gap-2 bg-card/70 backdrop-blur-sm rounded-full px-3 sm:px-4 py-2">
                 <Users className="w-4 h-4 text-accent" />
-                <span className="font-body text-sm text-foreground">Family-Centered</span>
+                <span className="font-body text-xs sm:text-sm text-foreground">Family-Centered</span>
               </div>
             </div>
           </div>
 
           {/* Curriculum Grid */}
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-0">
             {curriculums.map((curriculum, index) => (
               <Card key={curriculum.id} className="bg-gradient-card border-border/50 hover:shadow-card transition-all duration-300 hover:scale-[1.02] group relative overflow-hidden">
                 {curriculum.popular && (

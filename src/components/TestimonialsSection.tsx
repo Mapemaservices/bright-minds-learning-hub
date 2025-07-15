@@ -8,7 +8,7 @@ export const TestimonialsSection = () => {
       name: "Sarah M.",
       role: "Homeschool Mom of 2",
       location: "Texas",
-      quote: "Finding Bright Minds was a game-changer for our family. My 8-year-old with ADHD went from struggling with traditional workbooks to absolutely loving learning time. The visual approach and movement breaks make all the difference!",
+      quote: "Finding BumbleBook was a game-changer for our family. My 8-year-old with ADHD went from struggling with traditional workbooks to absolutely loving learning time. The visual approach and movement breaks make all the difference!",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
     },
@@ -37,17 +37,17 @@ export const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="font-heading font-bold text-3xl md:text-5xl text-foreground mb-6">
+          <div className="text-center mb-12 sm:mb-16 px-4 sm:px-0">
+            <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-foreground mb-4 sm:mb-6">
               What Parents Are Saying
             </h2>
-            <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-body text-base sm:text-lg text-muted-foreground max-w-2xl lg:max-w-3xl mx-auto">
               Real stories from families who have discovered the joy of ADHD-friendly homeschooling.
             </p>
           </div>
 
           {/* Testimonials Grid */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-0">
             {testimonials.map((testimonial, index) => (
               <Card key={testimonial.id} className="bg-gradient-card border-border/50 hover:shadow-card transition-all duration-300 hover:scale-105 relative overflow-hidden">
                 <CardContent className="p-6">

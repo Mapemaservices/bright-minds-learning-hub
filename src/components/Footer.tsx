@@ -13,9 +13,9 @@ export const Footer = () => {
             <div className="md:col-span-2 space-y-4">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                  <span className="text-background font-bold text-xl">B</span>
+                  <span className="text-background font-bold text-xl">🐝</span>
                 </div>
-                <h3 className="font-heading font-bold text-2xl">Bright Minds Bookstore</h3>
+                <h3 className="font-heading font-bold text-2xl">BumbleBook</h3>
               </div>
               <p className="font-body text-background/80 leading-relaxed max-w-md">
                 Empowering homeschooling families with ADHD-friendly learning tools that celebrate 
@@ -56,7 +56,7 @@ export const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-primary" />
-                  <span className="font-body text-sm text-background/80">hello@brightminds.com</span>
+                  <span className="font-body text-sm text-background/80">hello@bumblebook.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-secondary" />
@@ -135,7 +135,7 @@ export const Footer = () => {
                 </a>
               </div>
               <div className="text-sm text-background/70">
-                © {currentYear} Bright Minds Bookstore. Made with ❤️ for neurodiverse families.
+                © {currentYear} BumbleBook. Made with ❤️ for neurodiverse families.
               </div>
             </div>
           </div>

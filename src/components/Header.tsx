@@ -42,20 +42,20 @@ export const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">B</span>
+              <span className="text-primary-foreground font-bold text-lg">🐝</span>
             </div>
-            <h1 className="font-heading font-bold text-xl text-foreground">
-              Bright Minds
+            <h1 className="font-heading font-bold text-lg sm:text-xl text-foreground">
+              BumbleBook
             </h1>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="font-body text-foreground hover:text-primary transition-colors duration-300 relative group"
+                className="font-body text-sm xl:text-base text-foreground hover:text-primary transition-colors duration-300 relative group"
               >
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
@@ -78,7 +78,7 @@ export const Header = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden"
+              className="lg:hidden"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -88,7 +88,7 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden mt-4 py-4 border-t border-border">
+          <nav className="lg:hidden mt-4 py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <button
